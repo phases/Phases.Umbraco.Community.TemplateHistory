@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Umbraco.Community.TemplateHistory/Umbraco.Community.TemplateHistory.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Umbraco.Community.TemplateHistory.TestSite/Umbraco.Community.TemplateHistory.TestSite.csproj" />
+  </Folder>
+</Solution>

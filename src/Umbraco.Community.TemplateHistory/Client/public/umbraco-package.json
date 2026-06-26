@@ -1,0 +1,14 @@
+{
+  "id": "Phases.Umbraco.Community.TemplateHistory",
+  "name": "Phases.Umbraco.Community.TemplateHistory",
+  "version": "0.1.0",
+  "allowTelemetry": true,
+  "extensions": [
+    {
+      "name": "Umbraco Community Template History Bundle",
+      "alias": "Umbraco.Community.TemplateHistory.Bundle",
+      "type": "bundle",
+      "js": "/App_Plugins/UmbracoCommunityTemplateHistory/umbraco-community-template-history.js"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+## Build artifacts
+bin/
+obj/
+wwwroot/
+
+## IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+## Node
+node_modules/
+dist/
+
+## Umbraco
+**/umbraco/Data/
+**/umbraco/Logs/
+**/appsettings.Development.json
+
+## OS
+.DS_Store
+Thumbs.db

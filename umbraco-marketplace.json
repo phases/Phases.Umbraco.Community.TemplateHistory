@@ -1,0 +1,61 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "Title": "Template History",
+  "Description": "Track version history for Umbraco templates, stylesheets, scripts, and partial views. Compare diffs side-by-side or unified, restore previous versions, and browse recent changes from a dedicated History workspace tab and Settings dashboard.",
+  "AuthorDetails": {
+    "Name": "Phases",
+    "Description": "Phases — digital efficiency: web, Podio, integrations, and Umbraco solutions.",
+    "Url": "https://www.phases.io/",
+    "ImageUrl": "https://github.com/phases.png",
+    "SyncContributorsFromRepository": false,
+    "Contributors": [
+      {
+        "Name": "Jerin Jose",
+        "Url": "https://github.com/phases"
+      }
+    ]
+  },
+  "Category": "Developer Tools",
+  "DocumentationUrl": "https://github.com/phases/Phases.Umbraco.Community.TemplateHistory/blob/main/README.md",
+  "LicenseTypes": [ "Free" ],
+  "IssueTrackerUrl": "https://github.com/phases/Phases.Umbraco.Community.TemplateHistory/issues",
+  "PackageType": "Package",
+  "LookingForContributors": true,
+  "LookingForMaintainer": false,
+  "VersionDependencyMode": "Default",
+  "Screenshots": [
+    {
+      "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.Community.TemplateHistory/main/Screenshots/history-workspace.png",
+      "Caption": "History workspace tab with version list"
+    },
+    {
+      "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.Community.TemplateHistory/main/Screenshots/diff-comparison.png",
+      "Caption": "Side-by-side diff comparison"
+    },
+    {
+      "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.Community.TemplateHistory/main/Screenshots/settings-dashboard.png",
+      "Caption": "Recent changes dashboard in Settings"
+    }
+  ],
+  "Tags": [
+    "umbraco",
+    "umbraco 17",
+    "umbraco17",
+    "umbraco-marketplace",
+    "phases",
+    "backoffice",
+    "templates",
+    "stylesheets",
+    "scripts",
+    "partial views",
+    "partial-views",
+    "history",
+    "diff",
+    "version control",
+    "version-control",
+    "restore",
+    "developer tools",
+    "developer-tools",
+    "templating"
+  ]
+}

@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StaticWebAssetBasePath>/</StaticWebAssetBasePath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Phases.Umbraco.Community.TemplateHistory</PackageId>
+    <Product>Phases.Umbraco.Community.TemplateHistory</Product>
+    <Title>Phases Umbraco Community Template History</Title>
+    <Description>Track version history for Umbraco templates, stylesheets, scripts, and partial views. Compare diffs and restore previous versions from the backoffice.</Description>
+    <Version>0.1.0</Version>
+    <Authors>Phases</Authors>
+    <PackageTags>umbraco;umbraco17;umbraco-marketplace;phases;template;stylesheet;script;partial-view;partial-views;history;diff;version-control;backoffice;developer-tools;restore;package</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/phases/Phases.Umbraco.Community.TemplateHistory</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/phases/Phases.Umbraco.Community.TemplateHistory</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="DiffPlex" Version="1.7.2" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="17.1.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="17.1.0" />
+    <PackageReference Include="Umbraco.Cms.Api.Common" Version="17.1.0" />
+    <PackageReference Include="Umbraco.Cms.Api.Management" Version="17.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Dont include the client folder as part of packaging nuget build -->
+    <Content Remove="Client\**" />
+
+    <!-- However make the Umbraco-package.json included for dotnet pack or nuget package and visible to the solution -->
+    <None Include="Client\public\umbraco-package.json" Pack="false" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\README.md" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <ClientDir>$(MSBuildProjectDirectory)\Client</ClientDir>
+    <BuildClient Condition="'$(BuildClient)' == ''">true</BuildClient>
+  </PropertyGroup>
+
+  <Target Name="BuildClientAssets" BeforeTargets="BeforeBuild" Condition="'$(BuildClient)' == 'true'">
+    <Message Importance="high" Text="Building Umbraco Community Template History backoffice client..." />
+    <Exec WorkingDirectory="$(ClientDir)" Command="npm run build" />
+  </Target>
+
+</Project>

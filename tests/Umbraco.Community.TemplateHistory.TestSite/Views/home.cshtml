@@ -1,0 +1,28 @@
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = null;
+    var pageTitle = Model?.Name ?? "Home";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@pageTitle - Template History Test Site</title>
+    <link rel="stylesheet" href="/css/test .css" />
+</head>
+<body class="test-home">
+    <header class="test-header">
+        <h1>@pageTitle</h1>
+        <p>Template History test content — home template v1</p>
+    </header>
+
+    <main class="test-main">
+        <p>Use this template to verify version snapshots, diffs, and restore in the backoffice.</p>
+        <p>Current page ID: @Model?.Id</p>
+    </main>
+fgdggfdgdgfgfgfg
+    <script src="/scripts/test.js"></script>
+</body>
+</html>
