@@ -11,12 +11,14 @@
     <Product>Phases.Umbraco.Community.TemplateHistory</Product>
     <Title>Phases Umbraco Community Template History</Title>
     <Description>Track version history for Umbraco templates, stylesheets, scripts, and partial views. Compare diffs and restore previous versions from the backoffice.</Description>
-    <Version>0.1.0</Version>
-    <Authors>Phases</Authors>
+    <Version>0.1.1</Version>
+    <Authors>Phases, jerin-ose</Authors>
+    <Company>Phases</Company>
+    <Copyright>Copyright © Phases $(Year)</Copyright>
     <PackageTags>umbraco;umbraco17;umbraco-marketplace;phases;template;stylesheet;script;partial-view;partial-views;history;diff;version-control;backoffice;developer-tools;restore;package</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/phases/Phases.Umbraco.Community.TemplateHistory</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/phases/Phases.Umbraco.Community.TemplateHistory</RepositoryUrl>
+    <RepositoryUrl>https://github.com/phases/Phases.Umbraco.Community.TemplateHistory.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
