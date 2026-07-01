@@ -25,15 +25,15 @@
   "VersionDependencyMode": "Default",
   "Screenshots": [
     {
-      "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.Community.TemplateHistory/main/Screenshots/history-workspace.png",
+      "ImageUrl": "https://github.com/phases/Phases.Umbraco.Community.TemplateHistory/blob/main/Screenshots/Screenshot%202026-06-24%20203809.png",
       "Caption": "History workspace tab with version list"
     },
     {
-      "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.Community.TemplateHistory/main/Screenshots/diff-comparison.png",
+      "ImageUrl": "https://github.com/phases/Phases.Umbraco.Community.TemplateHistory/blob/main/Screenshots/Screenshot%202026-06-24%20203733.png",
       "Caption": "Side-by-side diff comparison"
     },
     {
-      "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.Community.TemplateHistory/main/Screenshots/settings-dashboard.png",
+      "ImageUrl": "https://github.com/phases/Phases.Umbraco.Community.TemplateHistory/blob/main/Screenshots/Screenshot%202026-06-24%20203809.png",
       "Caption": "Recent changes dashboard in Settings"
     }
   ],
